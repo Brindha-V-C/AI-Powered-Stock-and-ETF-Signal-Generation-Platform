@@ -28,8 +28,7 @@ def load_historical_data(csv_path: str = "ml_trading_signals.csv",
             return df
     except Exception as e:
         print(f"⚠️ Pipeline fetch failed for {ticker}: {e}")
-    return pd.DataFrame()
-    # ... (skipping unchanged code if any, but replacing whole function for safety)
+
     should_use_pipeline = use_pipeline if use_pipeline is not None else (DATA_SOURCE == 'pipeline')
     df = pd.DataFrame()
 

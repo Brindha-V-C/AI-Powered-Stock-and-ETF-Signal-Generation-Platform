@@ -24,7 +24,7 @@ def load_historical_data_from_api(ticker: str) -> pd.DataFrame:
     response = requests.post(
         f"{ML_BASE_URL}{HISTORICAL_ENDPOINT}",
         json=payload,
-        timeout=120
+        timeout=500
     )
 
     if response.status_code != 200:

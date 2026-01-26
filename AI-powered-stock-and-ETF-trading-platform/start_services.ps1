@@ -1,6 +1,6 @@
 Write-Host "Starting Core Services..."
 
-# Start Signals API (Port 8005)
+# Start Signals API (Port 8000)
 Start-Process python -ArgumentList "signals/api.py" -WindowStyle Minimized
 Write-Host "✅ Signals API started on Port 8000"
 

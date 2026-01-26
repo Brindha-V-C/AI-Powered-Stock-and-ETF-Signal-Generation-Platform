@@ -44,6 +44,21 @@ app.add_middleware(
 )
 
 # =================================================
+# ROOT ENDPOINT
+# =================================================
+@app.get("/")
+def read_root():
+    return {
+        "message": "Welcome to the ML Signal Service API",
+        "status": "online",
+        "endpoints": {
+            "live_signal": "/api/v1/ml/signal/live [POST]",
+            "historical_signals": "/api/v1/ml/signal/historical [POST]",
+            "health": "/health [GET]"
+        }
+    }
+
+# =================================================
 # LOAD MODELS
 # =================================================
 MODEL_PATH = "C:/infosys1/AI-powered-stock-and-ETF-trading-platform/ml/models/rf_model.pkl"
