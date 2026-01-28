@@ -232,6 +232,9 @@ def get_live_signal(request: TickerRequest):
         # Add historical-compatible fields if necessary
         result["signal"] = result["action"]
         result["expected_return"] = 0.0 # Heuristics don't provide easy return %
+
+        # ✅ ADD THIS
+        result["current_price"] = float(latest["Close"])
         
         return result
         
