@@ -15,7 +15,7 @@ from tzlocal import get_localzone
 # ⚠️ You must generate an App Password from your Google Account settings.
 # Do not use your normal login password.
 EMAIL_SENDER = "saikarthikreddykuppireddy@gmail.com"  # Your Email
-EMAIL_PASSWORD = "mmci cuhh kwbn sdgo"   # Your App Password
+EMAIL_PASSWORD = "fmfg dncy yuku fvqt"   # Your App Password
 
 # ==========================================
 # 2. INITIALIZE APP & SCHEDULER
